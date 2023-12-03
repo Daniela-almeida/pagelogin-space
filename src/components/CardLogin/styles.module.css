@@ -4,7 +4,7 @@ body {
   background-size: cover;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 .containerCard {
   display: flex;
@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 5em;
+  top: 3em;
   padding: 1em 2em;
 }
 .cardLogin {
@@ -59,6 +59,7 @@ form input {
 
 form input:focus {
   color: #fff;
+  height: 4rem;
 }
 
 form .checkbox {
