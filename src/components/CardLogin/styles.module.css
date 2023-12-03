@@ -1,0 +1,213 @@
+body {
+  background-image: url(../../assets/img-earth-space.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.containerCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 5em;
+  padding: 1em 2em;
+}
+.cardLogin {
+  width: 39rem;
+  height: 43rem;
+  border: 1px solid #fff;
+  background: rgba(12, 9, 9, 0.17);
+  backdrop-filter: blur(3px);
+  border-radius: 8px;
+}
+
+h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6em;
+  gap: 1.8em;
+}
+
+form input {
+  width: 33rem;
+  height: 4rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding-left: 1.5em;
+  font-size: 1em;
+  color: #fff;
+}
+
+form input:focus {
+  color: #fff;
+}
+
+form .checkbox {
+  width: 1.1rem;
+  height: 1.3rem;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.35);
+  position: relative;
+  left: -15.8em;
+  bottom: 2.5em;
+  
+  
+}
+
+form label {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: relative;
+  bottom: 6em;
+  left: -11em;
+}
+
+form .textForgot {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+  position: relative;
+  left: 12em;
+  bottom: 12em;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+form p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: relative;
+  bottom: 6em;
+
+  
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+form button {
+  width: 33rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ffffff;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  bottom: 9em;
+  color: #fff;
+  transition: 0.4s ease-in-out;
+
+  &:hover{
+    background-color: #ffffffe8;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+  }
+
+}
+
+
+@media  screen and (max-width: 767px) {
+  .cardLogin{
+    width: 85vw;
+  }
+  form input{
+    width: 29rem;
+  }
+
+  form button{
+    width: 29rem;
+  }
+  form .checkbox {
+    position: relative;
+    left: -13.8rem;
+  }
+
+  form label {
+    position: relative;
+    left: -9em;
+  }
+  form .textForgot{
+    position: relative;
+    left: 10em;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1500px) {
+  .cardLogin{
+    width: 38vw;
+    height: 80vh;
+    position: relative;
+    bottom: 1.8em;
+  }
+
+  form{
+    padding-top: 4.2em;
+    gap: 0.8em;
+  }
+  form input{
+    width: 29rem;
+  }
+
+  form button{
+    width: 29rem;
+    position: relative;
+    bottom: 7em;
+  }
+
+  form .checkbox {
+    position: relative;
+    left: -13.8rem;
+    top: -1.6em;
+  }
+
+  form p{
+    position: relative;
+    bottom: 5em;
+  }
+  form label {
+    position: relative;
+    left: -9em;
+    top: -4em;
+  }
+  form .textForgot{
+    position: relative;
+    left: 10em;
+    top: -8em;
+  }
+}
